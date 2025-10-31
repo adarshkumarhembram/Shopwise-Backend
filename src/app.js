@@ -6,6 +6,8 @@ const helmet = require('helmet');
 const authRoutes = require('./routes/auth.routes');
 const protectedRoutes = require('./routes/protected.routes');
 const productRoutes = require('./routes/product.routes');
+const cartRoutes = require('./routes/cart.routes');
+const wishlistRoutes = require('./routes/wishlist.routes');
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/protected', protectedRoutes);
 app.use('/uploads', express.static('public/uploads'));
 app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
+app.use('/api/wishlist', wishlistRoutes);
 
 // Base route
 app.get('/', (req, res) => {
