@@ -5,6 +5,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const authRoutes = require('./routes/auth.routes');
 const protectedRoutes = require('./routes/protected.routes');
+const productRoutes = require('./routes/product.routes');
 
 const app = express();
 
@@ -14,6 +15,8 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use('/api/auth', authRoutes);
 app.use('/api/protected', protectedRoutes);
+app.use('/uploads', express.static('public/uploads'));
+app.use('/api/products', productRoutes);
 
 // Base route
 app.get('/', (req, res) => {
