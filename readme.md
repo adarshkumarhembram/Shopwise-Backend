@@ -35,15 +35,15 @@ It includes authentication, product management, cart & wishlist, order processin
 
 ## 🧱 Folder Structure
 
-   src/
-├─ config/ # DB connection
-├─ models/ # Mongoose models (User, Product, Cart, Wishlist, Order)
-├─ controllers/ # Business logic per module
-├─ routes/ # API endpoints
-├─ middlewares/ # Auth, upload, error handlers
-├─ utils/ # Pagination, helpers
-└─ app.js # Express app entry
-
+```bash
+src/
+├─ config/          # DB connection
+├─ models/          # Mongoose models (User, Product, Cart, Wishlist, Order)
+├─ controllers/     # Business logic per module
+├─ routes/          # API endpoints
+├─ middlewares/     # Auth, upload, error handlers
+├─ utils/           # Pagination, helpers
+└─ app.js           # Express app entry
 
 ---
 
@@ -180,10 +180,3 @@ Let’s connect on LinkedIn
 
 ---
 
-### ✅ Next Steps
-1. Save this as `README.md` in your project root.  
-2. Run:
-   ```bash
-   git add README.md
-   git commit -m "docs: added complete project README"
-   git push origin main
