@@ -1,18 +1,21 @@
 {
   "name": "shopwise-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ShopWise backend API",
+  "main": "src/index.js",
+  "type": "commonjs",
+
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "jest --runInBand --detectOpenHandles",
     "seed": "node scripts/seed.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+
+  "engines": {
+    "node": "20.x"
+  },
+
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
@@ -26,6 +29,7 @@
     "morgan": "^1.10.1",
     "multer": "^2.0.2"
   },
+
   "devDependencies": {
     "faker": "^6.6.6",
     "jest": "^30.2.0",
