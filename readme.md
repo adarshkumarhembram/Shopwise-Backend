@@ -4,6 +4,7 @@
 It includes authentication, product management, cart & wishlist, order processing, and test automation — following a clean modular architecture.
 
 ---
+🌐 **Live Deployment:** [ShopWise Backend on Render](https://shopwise-backend-toqa.onrender.com)
 
 ## 🚀 Features
 
